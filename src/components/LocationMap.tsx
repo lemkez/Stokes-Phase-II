@@ -1,8 +1,8 @@
 import { MapPin } from "lucide-react";
 
-const ADDRESS = "26 Spanish St., St. Augustine, FL";
+const ADDRESS = "6918 US-1, St. Augustine, Florida";
 const GOOGLE_MAPS_EMBED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.010073289889!2d-81.3129646848806!3d29.89505798192206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e69b8b2e2c7e2d%3A0x6e2e2e2e2e2e2e2e!2s26%20Spanish%20St%2C%20St.%20Augustine%2C%20FL%2032084!5e0!3m2!1sen!2sus!4v1718040000000!5m2!1sen!2sus";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.393073857806!2d-81.3422226849007!3d29.93622298191506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e69b6e2e2e2e2e%3A0x2e2e2e2e2e2e2e2e!2s6918%20US-1%2C%20St.%20Augustine%2C%20FL%2032086!5e0!3m2!1sen!2sus!4v1718040000000!5m2!1sen!2sus";
 
 export const LocationMap = () => (
   <section className="w-full max-w-3xl mx-auto px-4 py-8 flex flex-col gap-4">
