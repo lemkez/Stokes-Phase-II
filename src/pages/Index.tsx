@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { LocationMap } from "@/components/LocationMap";
 import { Gallery } from "@/components/Gallery";
+import { ProjectSummary } from "@/components/ProjectSummary";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
       <Hero />
       <LocationMap />
       <Gallery />
+      <ProjectSummary />
       {/* Further sections (availability, plans, etc.) will go here */}
       <div className="flex-1" />
       <MadeWithDyad />
