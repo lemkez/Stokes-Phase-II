@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { RequestPlansDialog } from "./RequestPlansDialog";
 
 const PROJECT = {
   name: "Parkway Medical Plaza",
@@ -63,12 +64,14 @@ export const Hero = () => (
             </div>
           ))}
         </div>
-        <Button
-          size="lg"
-          className="rounded-full px-8 py-3 text-base font-semibold shadow-md"
-        >
-          {PROJECT.cta}
-        </Button>
+        <RequestPlansDialog triggerClassName="block w-full">
+          <Button
+            size="lg"
+            className="rounded-full px-8 py-3 text-base font-semibold shadow-md w-full"
+          >
+            {PROJECT.cta}
+          </Button>
+        </RequestPlansDialog>
       </div>
     </div>
   </section>
