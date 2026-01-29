@@ -14,5 +14,5 @@ export default defineConfig(() => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/", // Always use root for local development
+  base: "/Stokes-Phase-II/", // Set for GitHub Pages
 }));
