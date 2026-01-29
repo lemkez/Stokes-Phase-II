@@ -16,7 +16,7 @@ const PROJECT = {
   ],
   phone: "(555) 123-4567",
   cta: "Request Plans & Pricing",
-  heroImage: "/placeholder.svg", // Replace with actual rendering
+  heroImage: "/1000016486.jpg", // Use real construction photo
 };
 
 export const Hero = () => (
@@ -36,7 +36,7 @@ export const Hero = () => (
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center text-center gap-6 z-10">
       <img
         src={PROJECT.heroImage}
-        alt="Exterior rendering of Parkway Medical Plaza"
+        alt="Exterior construction of Parkway Medical Plaza"
         className="w-full h-48 object-cover rounded-xl shadow-lg border border-gray-200 mb-2"
         draggable={false}
       />

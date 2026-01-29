@@ -28,5 +28,14 @@ export const LocationMap = () => (
         className="w-full h-64 sm:h-80"
       />
     </div>
+    <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg bg-white dark:bg-muted mt-4">
+      <img
+        src="/Stokes Landing Extended.jpg"
+        alt="Satellite map context"
+        className="w-full object-cover"
+        style={{ minHeight: 200, maxHeight: 400 }}
+        draggable={false}
+      />
+    </div>
   </section>
 );
