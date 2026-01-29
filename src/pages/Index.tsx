@@ -10,9 +10,9 @@ const Index = () => {
     <main className="min-h-screen bg-gray-50 dark:bg-background flex flex-col">
       <Hero />
       <LocationMap />
+      <SitePlanTable />
       <Gallery />
       <ProjectSummary />
-      <SitePlanTable />
       {/* Further sections (availability, plans, etc.) will go here */}
       <div className="flex-1" />
       <MadeWithDyad />
