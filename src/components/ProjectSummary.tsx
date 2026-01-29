@@ -1,27 +1,7 @@
-import { BadgeCheck, Warehouse, MapPin, Layers, CheckCircle, Users, Truck, ArrowRight, CalendarCheck, Info } from "lucide-react";
+import { BadgeCheck, Layers, CheckCircle, Users, Truck, CalendarCheck } from "lucide-react";
 
 export const ProjectSummary = () => (
   <section className="w-full max-w-4xl mx-auto px-4 py-10 flex flex-col gap-8">
-    {/* Project Name & Type */}
-    <div>
-      <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-2 flex items-center gap-2">
-        <Warehouse className="w-6 h-6 text-primary" />
-        Stokes Landing – Phase II (Building B)
-      </h2>
-      <div className="flex flex-wrap gap-2 text-base text-gray-700 dark:text-gray-200 mb-2">
-        <span className="bg-secondary px-3 py-1 rounded-full font-medium">New Construction Flex / Industrial Warehouse</span>
-      </div>
-      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm mb-1">
-        <MapPin className="w-4 h-4" />
-        <span>
-          6918 US-1, St. Augustine, Florida &middot; Jacksonville MSA | St. Johns County
-        </span>
-      </div>
-      <div className="text-gray-600 dark:text-gray-400 text-sm">
-        High-visibility frontage along the US-1 North Corridor with approximately 40,000 cars per day.
-      </div>
-    </div>
-
     {/* Building & Unit Details */}
     <div>
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
