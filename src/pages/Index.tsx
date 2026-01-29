@@ -4,6 +4,7 @@ import { LocationMap } from "@/components/LocationMap";
 import { Gallery } from "@/components/Gallery";
 import { ProjectSummary } from "@/components/ProjectSummary";
 import { SitePlanTable } from "@/components/SitePlanTable";
+import { FAQSection } from "@/components/FAQSection";
 
 const Index = () => {
   return (
@@ -13,7 +14,7 @@ const Index = () => {
       <SitePlanTable />
       <Gallery />
       <ProjectSummary />
-      {/* Further sections (availability, plans, etc.) will go here */}
+      <FAQSection />
       <div className="flex-1" />
       <MadeWithDyad />
     </main>
