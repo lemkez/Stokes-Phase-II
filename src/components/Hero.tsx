@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, FileText } from "lucide-react";
+import { Phone, FileText, BookOpen } from "lucide-react";
 import { RequestPlansDialog } from "./RequestPlansDialog";
 
 const PROJECT = {
@@ -9,6 +9,7 @@ const PROJECT = {
   delivery: "Q1 2025",
   entitlement: "Zoned, Permits Issued",
   zoningPdf: "/zoning.pdf", // Placeholder path for zoning PDF
+  omPdf: "/Stokes Landing Phase II OM.pdf", // OM PDF path
   metrics: [
     { label: "Total SF", value: "32,000" },
     { label: "Unit Sizes", value: "2,000–8,000 SF" },
@@ -66,6 +67,18 @@ export const Hero = () => (
             >
               <FileText className="w-4 h-4" />
               Zoning
+            </a>
+          </span>
+          <span>
+            <a
+              href={PROJECT.omPdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-green-700 dark:text-green-400 hover:underline font-semibold transition"
+              aria-label="View Offering Memorandum PDF"
+            >
+              <BookOpen className="w-4 h-4" />
+              Offering Memorandum
             </a>
           </span>
         </div>
