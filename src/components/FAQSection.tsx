@@ -1,5 +1,5 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import { Warehouse, Info, Layers, BadgeCheck, CheckCircle, Users, Truck, CalendarCheck, MapPin } from "lucide-react";
+import { Warehouse, Layers, BadgeCheck, CheckCircle, Users, Truck, CalendarCheck, MapPin } from "lucide-react";
 
 export const FAQSection = () => (
   <section className="w-full max-w-3xl mx-auto px-4 py-10">
@@ -25,19 +25,6 @@ export const FAQSection = () => (
           <div className="text-gray-600 dark:text-gray-400 text-sm mb-2">
             High-visibility frontage along the US-1 North Corridor with approximately 40,000 cars per day.
           </div>
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="overview">
-        <AccordionTrigger className="text-base font-semibold flex items-center gap-2">
-          <Info className="w-5 h-5 text-primary" />
-          What is the development overview?
-        </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-gray-700 dark:text-gray-200">
-            Stokes Landing Phase II is a brand-new flex/industrial warehouse development delivering in mid-2026. The project represents the second phase of a successful, multi-phase industrial development, with Phase I fully sold, reinforcing market demand and execution credibility.
-            <br /><br />
-            Phase II consists of a single flex/warehouse building designed for small- to mid-size users, with flexible unit sizing and modern construction standards.
-          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="building">
