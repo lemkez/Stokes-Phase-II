@@ -1,21 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { Phone, FileText, BookOpen } from "lucide-react";
+import { Phone, FileText } from "lucide-react";
 import { RequestPlansDialog } from "./RequestPlansDialog";
 
 const PROJECT = {
-  name: "Parkway Medical Plaza",
-  assetType: "Medical Office / Retail",
-  useCases: ["Medical", "Healthcare", "Retail Service"],
-  delivery: "Q1 2025",
-  entitlement: "Zoned, Permits Issued",
+  name: "Stokes Landing – Phase II (Building B)",
+  assetType: "New Construction Flex / Industrial Warehouse",
+  useCases: [
+    "Local Service Contractors",
+    "Light Industrial",
+    "Warehouse/Distribution",
+    "Owner-Users",
+    "Small Businesses"
+  ],
+  delivery: "Mid-2026",
+  entitlement: "Industrial Warehouse (IW), Fully Entitled",
   zoningPdf: "/zoning.pdf", // Placeholder path for zoning PDF
   omPdf: "/Stokes Landing Phase II OM.pdf", // OM PDF path
   metrics: [
-    { label: "Total SF", value: "32,000" },
-    { label: "Unit Sizes", value: "2,000–8,000 SF" },
-    { label: "Parking", value: "5/1,000 SF" },
+    { label: "Total Available SF", value: "~1,300–16,000" },
+    { label: "Units", value: "12" },
+    { label: "Divisibility", value: "1,300 SF increments" },
+    { label: "Parking", value: "Front-loaded, ample" }
   ],
-  phone: "(555) 123-4567",
+  phone: "(904) 555-1234",
   cta: "Request Plans & Pricing",
   heroImage: "/1000016486.jpg", // Use real construction photo
 };
@@ -37,7 +44,7 @@ export const Hero = () => (
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center text-center gap-6 z-10">
       <img
         src={PROJECT.heroImage}
-        alt="Exterior construction of Parkway Medical Plaza"
+        alt="Exterior construction of Stokes Landing – Phase II"
         className="w-full h-48 object-cover rounded-xl shadow-lg border border-gray-200 mb-2"
         draggable={false}
       />
@@ -77,7 +84,7 @@ export const Hero = () => (
               className="inline-flex items-center gap-1 text-green-700 dark:text-green-400 hover:underline font-semibold transition"
               aria-label="View Offering Memorandum PDF"
             >
-              <BookOpen className="w-4 h-4" />
+              <FileText className="w-4 h-4" />
               Offering Memorandum
             </a>
           </span>
