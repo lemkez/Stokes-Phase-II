@@ -14,9 +14,4 @@ export default defineConfig(() => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/Stokes-Phase-II/", // Set for GitHub Pages
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-  },
 }));
