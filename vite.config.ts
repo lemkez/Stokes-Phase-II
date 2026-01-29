@@ -14,4 +14,5 @@ export default defineConfig(() => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "/your-repo-name/", // 👈 Replace with your repo name
 }));
