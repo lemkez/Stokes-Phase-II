@@ -59,10 +59,16 @@ export const Hero = () => (
           <MapPin className="w-5 h-5 text-primary" />
           <span className="font-medium">{PROJECT.address}</span>
         </div>
-        <div className="flex flex-wrap justify-center gap-2 text-gray-700 dark:text-gray-200 text-base font-medium mb-2">
-          {PROJECT.useCases.map((uc) => (
-            <span key={uc} className="bg-secondary px-3 py-1 rounded-full">{uc}</span>
-          ))}
+        {/* "Ideal for" heading and use cases */}
+        <div className="mb-2">
+          <div className="text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1 tracking-wide uppercase">
+            Ideal for
+          </div>
+          <div className="flex flex-wrap justify-center gap-2 text-gray-700 dark:text-gray-200 text-base font-medium">
+            {PROJECT.useCases.map((uc) => (
+              <span key={uc} className="bg-secondary px-3 py-1 rounded-full">{uc}</span>
+            ))}
+          </div>
         </div>
         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600 dark:text-gray-300 mb-2">
           <span>
