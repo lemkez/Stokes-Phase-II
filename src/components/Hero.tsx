@@ -21,7 +21,9 @@ const PROJECT = {
     { label: "Total Available SF", value: "~1,300–16,000" },
     { label: "Units", value: "12" },
     { label: "Divisibility", value: "1,300 SF increments" },
-    { label: "Parking", value: "Front-loaded, ample" }
+    { label: "Parking", value: "Front-loaded, ample" },
+    { label: "Fire Sprinklers", value: "Yes" },
+    { label: "HVAC Installed", value: "Yes" }
   ],
   phone: "(904) 555-1234",
   cta: "Request Plans & Pricing",
