@@ -3,6 +3,7 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import { LocationMap } from "@/components/LocationMap";
 import { Gallery } from "@/components/Gallery";
 import { ProjectSummary } from "@/components/ProjectSummary";
+import { SitePlanTable } from "@/components/SitePlanTable";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <LocationMap />
       <Gallery />
       <ProjectSummary />
+      <SitePlanTable />
       {/* Further sections (availability, plans, etc.) will go here */}
       <div className="flex-1" />
       <MadeWithDyad />
