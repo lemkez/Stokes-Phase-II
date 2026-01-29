@@ -15,4 +15,8 @@ export default defineConfig(() => ({
     },
   },
   base: "/Stokes-Phase-II/", // Set for GitHub Pages
+  build: {
+    outDir: "docs",
+    emptyOutDir: true,
+  },
 }));

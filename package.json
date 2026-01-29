@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "postbuild": "cp dist/index.html dist/404.html"
+    "deploy": "echo 'Push docs/ to main branch and set GitHub Pages source to /docs folder.'",
+    "postbuild": "cp docs/index.html docs/404.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -38,9 +38,6 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-switch": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.0",
-    "@radix-ui/react-toast": "^1.2.1",
-    "@radix-ui/react-toggle": "^1.1.0",
-    "@radix-ui/react-toggle-group": "^1.1.0",
     "@tanstack/react-query": "^5.56.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
