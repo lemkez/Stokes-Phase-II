@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, FileText } from "lucide-react";
 import { RequestPlansDialog } from "./RequestPlansDialog";
 
 const PROJECT = {
@@ -8,6 +8,7 @@ const PROJECT = {
   useCases: ["Medical", "Healthcare", "Retail Service"],
   delivery: "Q1 2025",
   entitlement: "Zoned, Permits Issued",
+  zoningPdf: "/zoning.pdf", // Placeholder path for zoning PDF
   metrics: [
     { label: "Total SF", value: "32,000" },
     { label: "Unit Sizes", value: "2,000–8,000 SF" },
@@ -54,6 +55,18 @@ export const Hero = () => (
           </span>
           <span>
             <strong>Entitlement:</strong> {PROJECT.entitlement}
+          </span>
+          <span>
+            <a
+              href={PROJECT.zoningPdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline font-semibold transition"
+              aria-label="View Zoning PDF"
+            >
+              <FileText className="w-4 h-4" />
+              Zoning
+            </a>
           </span>
         </div>
         <div className="flex flex-wrap justify-center gap-4 mb-4">
