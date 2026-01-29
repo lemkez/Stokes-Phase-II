@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Phone, FileText } from "lucide-react";
+import { Phone, FileText, MapPin } from "lucide-react";
 import { RequestPlansDialog } from "./RequestPlansDialog";
 
 const PROJECT = {
   name: "Stokes Landing – Phase II (Building B)",
   assetType: "New Construction Flex / Industrial Warehouse",
+  address: "6918 US-1, St. Augustine, Florida",
   useCases: [
     "Local Service Contractors",
     "Light Industrial",
@@ -52,6 +53,10 @@ export const Hero = () => (
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
           {PROJECT.assetType}: <span className="text-primary">{PROJECT.name}</span>
         </h1>
+        <div className="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400 text-base mb-2">
+          <MapPin className="w-5 h-5 text-primary" />
+          <span className="font-medium">{PROJECT.address}</span>
+        </div>
         <div className="flex flex-wrap justify-center gap-2 text-gray-700 dark:text-gray-200 text-base font-medium mb-2">
           {PROJECT.useCases.map((uc) => (
             <span key={uc} className="bg-secondary px-3 py-1 rounded-full">{uc}</span>
