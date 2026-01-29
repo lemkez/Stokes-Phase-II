@@ -22,19 +22,6 @@ export const ProjectSummary = () => (
       </div>
     </div>
 
-    {/* Development Overview */}
-    <div>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
-        <Info className="w-5 h-5 text-primary" />
-        Development Overview
-      </h3>
-      <p className="text-gray-700 dark:text-gray-200">
-        Stokes Landing Phase II is a brand-new flex/industrial warehouse development delivering in mid-2026. The project represents the second phase of a successful, multi-phase industrial development, with Phase I fully sold, reinforcing market demand and execution credibility.
-        <br /><br />
-        Phase II consists of a single flex/warehouse building designed for small- to mid-size users, with flexible unit sizing and modern construction standards.
-      </p>
-    </div>
-
     {/* Building & Unit Details */}
     <div>
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
