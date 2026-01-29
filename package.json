@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "echo 'Push docs/ to main branch and set GitHub Pages source to /docs folder.'",
-    "postbuild": "cp docs/index.html docs/404.html"
+    "deploy": "gh-pages -d dist",
+    "postbuild": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
