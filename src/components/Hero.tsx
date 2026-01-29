@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, FileText, MapPin } from "lucide-react";
+import { Phone, FileText, MapPin, PlayCircle } from "lucide-react";
 import { RequestPlansDialog } from "./RequestPlansDialog";
 
 const PROJECT = {
@@ -28,6 +28,7 @@ const PROJECT = {
   phone: "(904) 555-1234",
   cta: "Request Plans & Pricing",
   heroImage: "/1000016486.jpg", // Use real construction photo
+  videoUrl: "https://youtu.be/QwTnCt7DZdo",
 };
 
 export const Hero = () => (
@@ -110,14 +111,33 @@ export const Hero = () => (
             </div>
           ))}
         </div>
-        <RequestPlansDialog triggerClassName="block w-full">
-          <Button
-            size="lg"
-            className="rounded-full px-8 py-3 text-base font-semibold shadow-md w-full"
+        <div className="flex flex-col gap-3 w-full">
+          <RequestPlansDialog triggerClassName="block w-full">
+            <Button
+              size="lg"
+              className="rounded-full px-8 py-3 text-base font-semibold shadow-md w-full"
+            >
+              {PROJECT.cta}
+            </Button>
+          </RequestPlansDialog>
+          <a
+            href={PROJECT.videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+            aria-label="Watch Project Video"
           >
-            {PROJECT.cta}
-          </Button>
-        </RequestPlansDialog>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="rounded-full px-8 py-3 text-base font-semibold shadow-md w-full flex items-center justify-center gap-2"
+              type="button"
+            >
+              <PlayCircle className="w-5 h-5 text-primary" />
+              Watch Project Video
+            </Button>
+          </a>
+        </div>
       </div>
     </div>
   </section>
